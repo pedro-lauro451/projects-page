@@ -1,7 +1,7 @@
 {
   "name": "projects-page",
   "version": "0.1.0",
-  "homepage":"https://pedro-lauro451.github.io/projects-page/",
+  "homepage": "https://pedro-lauro451.github.io/projects-page/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -39,6 +39,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "autoprefixer": "^10.4.9",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
