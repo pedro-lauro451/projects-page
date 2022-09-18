@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding: 20px;
+    border-bottom: 1px dashed var(--green-theme-main-color);
+
+    h2
+    {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: var(--green-theme-main-color);
+        display: flex;
+        flex-grow: 1;
+    }
+
+    span
+    {
+        svg{
+            color: var(--green-theme-main-color);
+        }
+    }
+}
