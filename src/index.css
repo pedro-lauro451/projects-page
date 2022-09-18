@@ -1,8 +1,9 @@
 :root{
-    --yellow-theme-background-color: #1d1d1d;
-    --yellow-theme-main-color: #ffdd40;
-    --yellow-theme-sub-text-color: #ffffff;
-    --yellow-theme-nav-background-color: #181818;
+    --green-theme-background-color: #1d1d1d;
+    --green-theme-main-color: #3eff37;
+    --green-theme-hover-color: #9dff9a;
+    --green-theme-sub-text-color: #ffffff;
+    --green-theme-nav-background-color: #181818;
 }
 
 *{
@@ -20,7 +21,7 @@ html
 
 body
 {
-    background: var(--yellow-theme-background-color);
+    background: var(--green-theme-background-color);
     height: 100%;
 }
 
