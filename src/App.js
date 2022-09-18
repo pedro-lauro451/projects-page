@@ -5,6 +5,7 @@ import Resume from './Containers/resume';
 import Skills from './Containers/skills';
 import Portfolio from './Containers/portfolio';
 import Contact from './Containers/contact';
+import Navbar from './Components/navBar';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       {/*main page content*/}
 
       <HashRouter>
+        <Navbar/>
         <Routes>
           <Route path='/' exact element={<Home/>} />
           <Route path='/about' exact element={<About/>} />
