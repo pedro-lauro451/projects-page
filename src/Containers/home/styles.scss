@@ -1,0 +1,88 @@
+.home
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    
+
+    &__text-wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        
+        h1
+        {
+            color: var(--green-theme-main-color);
+            margin: 0;
+            font-size: 4rem;
+            line-height: 5rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingEffectAnimation 1.5s steps(30, end);
+        }
+    }
+
+    &__contact-me
+    {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        margin-top: 20px;
+
+    button
+        {
+            cursor: pointer;
+            padding: 10px 65px;
+            font-size: 2rem;
+            background: transparent;
+            color: var(--green-theme-main-color);
+            border: 1.5px solid var(--green-theme-main-color);
+            border-radius: 4px;
+            font-weight: 500px;
+        }
+    button:hover
+        {
+            color:var(--green-theme-hover-color);
+            border: 1.5px solid var(--green-theme-hover-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 550px)
+{
+    .home__text-wrapper h1
+    {
+        font-size: 2.2rem;
+    }
+
+    .home
+    {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px)
+{
+    .home__text-wrapper h1
+    {
+        font-size: 3rem;
+    }
+    .home
+    {
+        margin-top: 70px;
+    }
+}
+
+@keyframes typingEffectAnimation{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}

@@ -1,9 +1,9 @@
 :root{
-    --green-theme-background-color: #1d1d1d;
-    --green-theme-main-color: #3eff37;
+    --green-theme-background-color: #000000;
+    --green-theme-main-color: #3d8e48;
     --green-theme-hover-color: #9dff9a;
     --green-theme-sub-text-color: #ffffff;
-    --green-theme-nav-background-color: #181818;
+    --green-theme-nav-background-color: #151515;
 }
 
 *{

@@ -1,3 +1,4 @@
+import './App.scss';
 import { HashRouter, Route, Routes} from 'react-router-dom';
 import Home from './Containers/home';
 import About from './Containers/about';
@@ -17,15 +18,11 @@ const handleInit = async (main) => {
 function App() {
 
   return (
-    <div>
-      {/*particles js*/}
-
-      {/*navbar*/}
-
-      {/*main page content*/}
-
-      <HashRouter>
-      
+    <div className="App">
+    
+      <div className="App__main-page-content">
+        <HashRouter>
+        
         <Particles id='particles' options={particles} init={handleInit}/>
       
         <Navbar/>
@@ -38,6 +35,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
         </Routes>
       </HashRouter> 
+      </div>
     </div>
   );
 }
