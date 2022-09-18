@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './Containers/home';
 import About from './Containers/about';
 import Resume from './Containers/resume';
@@ -15,14 +15,16 @@ function App() {
 
       {/*main page content*/}
 
-      <Routes>
-        <Route path='/projects-page' element={<Home/>} />
-        <Route path='/projects-page/about' element={<About/>} />
-        <Route path='/projects-page/resume' element={<Resume/>} />
-        <Route path='/projects-page/skills' element={<Skills/>} />
-        <Route path='/projects-page/portfolio' element={<Portfolio/>} />
-        <Route path='/projects-page/contact' element={<Contact/>} />
-      </Routes>
+      <HashRouter>
+        <Routes>
+          <Route path='/' exact element={<Home/>} />
+          <Route path='/about' exact element={<About/>} />
+          <Route path='/resume' element={<Resume/>} />
+          <Route path='/skills' element={<Skills/>} />
+          <Route path='/portfolio' element={<Portfolio/>} />
+          <Route path='/contact' element={<Contact/>} />
+        </Routes>
+      </HashRouter> 
     </div>
   );
 }
