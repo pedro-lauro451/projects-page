@@ -1,9 +1,9 @@
 const Skills = () => {
     return(
         <div>
-            <p>Skills</p>
+            Skills Page
         </div>
-    );
-};
+    )
+}
 
 export default Skills;
