@@ -1,19 +1,22 @@
-import imageOne from '../../images/pwd-generator.png';
-import imageTwo from '../../images/mockup.png';
+import imageOne from '../../images/pwd-generator.jpg';
+import imageTwo from '../../images/mockup.jpg';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsInfoCircleFill } from 'react-icons/bs';
 import './styles.scss';
 import { useState } from 'react';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 const portfolioData = [
     {
         id: 2,
         name: "Password Generator",
+        link: "https://pedro-lauro451.github.io/password-generator/",
         image: imageOne
     },
     {
         id: 3,
         name: "Mockup",
+        link: "https://pedro-lauro451.github.io/JSONPlaceholder-page/",
         image: imageTwo
     }
 ];
@@ -36,11 +39,19 @@ const filterData = [
 const Portfolio = () => {
 
     const [filteredValue, setFilteredValue] = useState(1);
+    const [hoverValue, setHoverValue] = useState();
 
     function handleFilter(currentId)
     {
         setFilteredValue(currentId);
     };
+
+    function handleHover(index)
+    {
+        setHoverValue(index);
+    };
+
+    const filteredItems = filteredValue === 1 ? portfolioData : portfolioData.filter(item => item.id === filteredValue);
 
     return(
         <section id="portfolio" className="portfolio">
@@ -52,7 +63,7 @@ const Portfolio = () => {
 
                     {
                         filterData.map(item => (
-                            <li onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
+                            <li className={item.filterId === filteredValue ? 'active' : ''} onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
                                 {
                                     item.label
                                 }
@@ -63,15 +74,28 @@ const Portfolio = () => {
                 </ul>
                 <div className='portfolio__content__cards'>
                     {
-                        portfolioData.map((item)=>(
-                            <div key={item.id} className="portfolio__content__cards__item">
+                        filteredItems.map((item,i)=>(
+                            <div key={`cardItem${item.name.trim()}`} 
+                            className="portfolio__content__cards__item"
+                            onMouseEnter={()=>handleHover(i)}
+                            onMouseLeave={()=>handleHover(null)}>
 
                                 <div className='portfolio__content__cards__item__img-wrapper'>
-                                    <a>
+                                    <a href={item.link} target="_blank">
                                         <img src={item.image}/>
                                     </a>
                                 </div>
-
+                                <div className='overlay'>
+                                    {
+                                        i === hoverValue && (
+                                            <a href={item.link} target="_blank">
+                                            <div>
+                                                <p>{item.name}</p>
+                                            </div>
+                                            </a>
+                                        )
+                                    }
+                                </div>
                             </div>
                         ))
                     }
