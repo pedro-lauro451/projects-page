@@ -23,3 +23,34 @@
         }
     }
 }
+
+.portfolio
+{
+    position: sticky;
+
+    &__content
+    {
+        padding: 20px;
+        width: 100%;
+
+        &__filter{
+            display: inline-block;
+            margin: 0 auto;
+            border-radius: 25px;
+            border: 1px dashed var(--green-theme-main-color);
+
+            li
+            {
+                color: var(--green-theme-sub-text-color);
+                font-size: 16px;
+                list-style-type: none;
+                display: inline-block;
+                cursor: pointer;
+                padding: 15px;
+                position: relative;
+                overflow: hidden;
+            }
+        }
+    }
+}
+

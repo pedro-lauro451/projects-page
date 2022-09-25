@@ -23,3 +23,66 @@
         }
     }
 }
+
+.resume
+{
+    position: sticky;
+}
+
+.timeline
+{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+
+    &__experience
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header-text
+        {
+            display: flex;
+            color: var(--green-theme-main-color);
+            font-size: 20px;
+        }
+
+        &__vertical-timeline-element
+        {
+            color: var(--green-theme-main-color);
+            font-size: 15px;
+        }
+
+        .vertical-timeline-element-title-wrapper
+        {
+            display: flex;
+            flex-direction: column;
+
+            p
+            {
+                color: var( --green-theme-sub-text-color);
+                font-size: 15px;
+            }
+        }
+
+        .vertical-timeline-element-content-arrow
+        {
+            display: none;
+        }
+
+        .vertical-timeline-element-content .vertical-timeline-element-date
+        {
+            opacity: 1;
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px)
+{
+    .timeline
+    {
+        flex-direction: column;
+    }
+}
