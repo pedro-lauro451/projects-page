@@ -1,5 +1,5 @@
 import PageHeaderContent from "../../Components/pageHeaderContent";
-import { BsInfoCircleFill } from 'react-icons/bs';
+import { BsFillGearFill } from 'react-icons/bs';
 import { skillsData } from "./utils";
 import './styles.scss';
 
@@ -8,7 +8,7 @@ const Skills = () => {
         <section id="skills" className="skills">
             <PageHeaderContent 
             headerText="Skills"
-            icon={<BsInfoCircleFill size={30}/>}/>
+            icon={<BsFillGearFill size={30}/>}/>
             <div className="skills__content-wrapper">
                 {
                     skillsData.map((item,i) =>(

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 30px;
     
 
     &__text-wrapper
@@ -60,9 +59,10 @@
         font-size: 2.2rem;
     }
 
-    .home
+    .home__text-wrapper
     {
-        margin-top: 70px;
+        justify-content:start;
+        margin-top: 50px;
     }
 }
 
@@ -72,9 +72,11 @@
     {
         font-size: 3rem;
     }
-    .home
+
+    .home__text-wrapper
     {
-        margin-top: 70px;
+        justify-content:start;
+        margin-top: 50px;
     }
 }
 

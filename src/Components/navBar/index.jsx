@@ -40,7 +40,7 @@ const Navbar = () => {
 
     return(
         <div>
-            <nav className='navbar'>
+            <nav className={`navbar ${toggleIcon ? 'active' : ""}`}>
                 <div className='navbar__container'>
                     <Link to={'/'} className='navbar__container__logo'>
                     <FaReact size={30}/>

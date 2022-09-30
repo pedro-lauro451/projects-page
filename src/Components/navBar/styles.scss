@@ -70,6 +70,14 @@
 
 @media only screen and (max-width:768px)
 {
+    .navbar
+    {
+        &.active
+        {
+            margin-bottom: 260px;
+            transition: 0.5s ease;
+        }
+    }
     .navbar__container__menu
     {
         display: flex;

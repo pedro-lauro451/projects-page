@@ -1,7 +1,7 @@
 import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
 import PageHeaderContent from "../../Components/pageHeaderContent";
-import { BsInfoCircleFill } from 'react-icons/bs';
+import { BsBullseye } from 'react-icons/bs';
 import './styles.scss';
 import { useState } from 'react';
 import { hover } from '@testing-library/user-event/dist/hover';
@@ -57,7 +57,7 @@ const Portfolio = () => {
         <section id="portfolio" className="portfolio">
             <PageHeaderContent
                 headerText="portfolio"
-                icon={<BsInfoCircleFill size={30} />} />
+                icon={<BsBullseye size={30} />} />
             <div className="portfolio__content">
                 <ul className='portfolio__content__filter'>
 
