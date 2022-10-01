@@ -16,14 +16,37 @@
         h1
         {
             color: var(--green-theme-main-color);
-            margin: 0;
-            font-size: 4rem;
+            margin: 0 auto;
+            font-size: 4.1rem;
             line-height: 5rem;
             position: relative;
             overflow: hidden;
+            border-right: .10em solid var(--green-theme-main-color);
             white-space: nowrap;
-            animation: typingEffectAnimation 1.5s steps(30, end);
+            animation: typing 3s steps(40, end),
+            blink-caret .75s step-end infinite;
         }
+
+        &__icons
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            span
+            {
+                padding: 20px;
+                align-self: center;
+                position: sticky;
+                svg{
+                    color: var(--green-theme-main-color);
+                }
+                svg:hover
+                {
+                    color: var(--green-theme-hover-color);
+                }
+            }    
+        }   
     }
 
     &__contact-me
@@ -31,13 +54,14 @@
         display: flex;
         justify-content: center;
         position: sticky;
-        margin-top: 20px;
+        margin-top: 5px;
 
     button
         {
             cursor: pointer;
             padding: 10px 65px;
-            font-size: 2rem;
+            margin: 10px;
+            font-size: 1.6rem;
             background: transparent;
             color: var(--green-theme-main-color);
             border: 1.5px solid var(--green-theme-main-color);
@@ -62,7 +86,23 @@
     .home__text-wrapper
     {
         justify-content:start;
-        margin-top: 50px;
+        margin-top: 20px;
+    }
+    .home__contact-me
+    {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    .home__text-wrapper h1
+    {
+        font-size: 2.0rem;
+    }
+    .home__text-wrapper__icons
+    {
+        flex-direction: column;
     }
 }
 
@@ -80,11 +120,16 @@
     }
 }
 
-@keyframes typingEffectAnimation{
+@keyframes typing{
     from{
         width: 0;
     }
     to{
         width: 100%;
     }
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: var(--green-theme-main-color)}
 }

@@ -2,7 +2,7 @@ import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsInfoCircleFill } from 'react-icons/bs';
 import './styles.scss';
 
-const jobSummary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim leo non interdum tempus. Fusce aliquet mi tincidunt, iaculis eros sed, dapibus tellus. Nam malesuada, leo vel fringilla hendrerit, nibh dui fringilla lectus, sit amet auctor nisl eros sit amet ipsum. Vestibulum ut turpis malesuada, tincidunt dui eu, commodo arcu. Sed imperdiet euismod risus. Maecenas dignissim luctus ligula, in pellentesque ante tempor eget. Morbi sed pretium nisl. Ut facilisis mi a massa lacinia, in rhoncus ex aliquet. "
+const jobSummary = "Hello, my name is Pedro and I am a programming student aiming to become a full stack developer."
 const personalDetails = [
     {
         label: 'Name',
@@ -19,6 +19,11 @@ const personalDetails = [
     {
         label: 'Email',
         value: 'pedro.lauro451@gmail.com'
+    }
+    ,
+    {
+        label: 'Phone',
+        value: "+55 (11) 98840-6610"
     }
 ];
 

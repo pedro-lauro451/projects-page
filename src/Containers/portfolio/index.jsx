@@ -4,7 +4,6 @@ import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsBullseye } from 'react-icons/bs';
 import './styles.scss';
 import { useState } from 'react';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 const portfolioData = [
     {
@@ -56,7 +55,7 @@ const Portfolio = () => {
     return(
         <section id="portfolio" className="portfolio">
             <PageHeaderContent
-                headerText="portfolio"
+                headerText="projects"
                 icon={<BsBullseye size={30} />} />
             <div className="portfolio__content">
                 <ul className='portfolio__content__filter'>

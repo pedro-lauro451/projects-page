@@ -2,6 +2,7 @@ import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsFillFileEarmarkPersonFill } from 'react-icons/bs';
 import './styles.scss';
 import { resumeData } from "./utils";
+import { experienceData } from "./utils";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 import {MdWork} from 'react-icons/md';
@@ -28,7 +29,6 @@ const Resume = () => {
                                 border: '1.5px solid var(--green-theme-main-color)',
                                 boxShadow: 'none'
                             }}
-                            date="2020 - Present"
                             icon={<MdWork/>}
                             iconStyle={{
                                 color: 'var(--green-theme-main-color)',
@@ -54,7 +54,7 @@ const Resume = () => {
                     layout={'1-column'}
                     lineColor="var(--green-theme-main-color)">
                     {
-                        resumeData.experience.map((item,i)=>(
+                        experienceData.experience.map((item,i)=>(
                             <VerticalTimelineElement
                             key={i}
                             className="timeline__experience__vertical-timeline-element"
@@ -63,7 +63,6 @@ const Resume = () => {
                                 border: '1.5px solid var(--green-theme-main-color)',
                                 boxShadow: 'none'
                             }}
-                            date="2020 - Present"
                             icon={<MdWork/>}
                             iconStyle={{
                                 color: 'var(--green-theme-main-color)',

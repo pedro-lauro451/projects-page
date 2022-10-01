@@ -22,13 +22,13 @@ const data = [
         to: '/skills'
     },
     {
-        label: 'Portfolio',
+        label: 'Projects',
         to: '/portfolio'
     },
-    {
-        label: 'Contact',
-        to: '/contact'
-    }
+    // {
+    //     label: 'Contact',
+    //     to: '/contact'
+    // }
 ];
 
 const Navbar = () => {
