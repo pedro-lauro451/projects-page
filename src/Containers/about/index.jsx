@@ -2,15 +2,10 @@ import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsInfoCircleFill } from 'react-icons/bs';
 import './styles.scss';
 
-const jobSummary = "Hello, my name is Pedro and I am a programming student aiming to become a full stack developer."
 const personalDetails = [
     {
         label: 'Name',
         value: 'Pedro Lauro Nunes Duarte'
-    },
-    {
-        label: 'Age',
-        value: '25'
     },
     {
         label: 'Address',
@@ -28,22 +23,21 @@ const personalDetails = [
 ];
 
 
-const About = () => {
+const About = (props) => {
     return (
         <section id="about" className="about">
             <PageHeaderContent
-                headerText="About me"
+                headerText={props.AboutContentProp[0].content}
                 icon={<BsInfoCircleFill size={30} />} />
 
             <div className="about__content">
                 <div className="about__content__personalWrapper">
-                    <h3>Front End Dev</h3>
-                    <p>{jobSummary}</p>
-                    <h3 className="personalInformation">Personal info</h3>
+                    <h3>{props.AboutContentProp[1].content}</h3>
+                    <p>{props.AboutContentProp[2].content}</p>
+                    <h3 className="personalInformation">{props.AboutContentProp[3].content}</h3>
                     <ul>
                         {personalDetails.map((item, i) => (
                             <li key={i}>
-                                <span className="title">{item.label + ":"}</span>
                                 <span className="value">{item.value}</span>
                             </li>
                         ))

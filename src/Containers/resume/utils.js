@@ -22,3 +22,29 @@ export const experienceData = {
         }
     ],
 };
+
+export const resumeDataPort = {
+    experience: [
+        {
+            title: "Analista de CRM",
+            subTitle: "ADIN Comercial",
+            description: "Criação de emails e segmentação de campanhas usando Oracle Responsys e pesquisas de SQL. Documentação de processos e QA do HTML."
+        },
+        {
+            title: "Monitoria",
+            subTitle: "IFSP",
+            description: "Auxiliar estudantes com exercícios e perguntas sobre programação. Inspeção do laboratório. Tradução do software de monitoramento da sala do Inglês para o Português."
+        }
+    ], 
+};
+
+export const experiencePort = {
+    experience: [
+        {
+            title: "Análise e Desenvolvimento de Sistemas",
+            subTitle: "IFSP",
+            description: "Concluído em 2019."
+        }
+    ],
+};
+

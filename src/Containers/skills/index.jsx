@@ -3,11 +3,11 @@ import { BsFillGearFill } from 'react-icons/bs';
 import { skillsData } from "./utils";
 import './styles.scss';
 
-const Skills = () => {
+const Skills = (props) => {
     return(
         <section id="skills" className="skills">
             <PageHeaderContent 
-            headerText="Skills"
+            headerText={props.skillsContentProp[0].content}
             icon={<BsFillGearFill size={30}/>}/>
             <div className="skills__content-wrapper">
                 {

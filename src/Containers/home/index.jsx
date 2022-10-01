@@ -2,7 +2,7 @@ import './styles.scss';
 import {BsLinkedin, BsGithub, BsInstagram} from 'react-icons/bs';
 import {useNavigate} from 'react-router-dom';
 
-const Home = () => {
+const Home = (props) => {
 
     const navigate = useNavigate();
     
@@ -14,7 +14,7 @@ const Home = () => {
             <section id="home" className="home">
                 <div className="home__text-wrapper">
                     <h1>
-                    plauro451 projects page
+                        {props.contentProp[0].content}
                     </h1>
                     <div className='home__text-wrapper__icons'>
                         <span>
@@ -37,9 +37,11 @@ const Home = () => {
                     </div>
 
                     <span className="home__contact-me">
-                        <button onClick={handleNavigate}>Projects</button>
+                        <a>
+                            <button onClick={handleNavigate}>{props.contentProp[1].content}</button>
+                        </a>
                         <a href="mailto:pedro.lauro451@gmail.com">
-                            <button>Contact Me</button>
+                            <button>{props.contentProp[2].content}</button>
                         </a>
                     </span>
                 </div>

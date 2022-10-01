@@ -20,22 +20,39 @@ const portfolioData = [
     }
 ];
 
-const filterData = [
-    {
-        filterId: 1,
-        label: 'All'
-    },
-    {
-        filterId: 2,
-        label: 'Done'
-    },
-    {
-        filterId: 3,
-        label: 'In-Progress'
-    }
-];
+const Portfolio = (props) => {
 
-const Portfolio = () => {
+    const toggled = props.toggled;
+
+    const filterData = [
+        {
+            filterId: 1,
+            label: 'All'
+        },
+        {
+            filterId: 2,
+            label: 'Done'
+        },
+        {
+            filterId: 3,
+            label: 'Doing'
+        }
+    ];
+
+    const filterDataPort = [
+        {
+            filterId: 1,
+            label: 'Todos'
+        },
+        {
+            filterId: 2,
+            label: 'Feitos'
+        },
+        {
+            filterId: 3,
+            label: 'Fazendo'
+        }
+    ];
 
     const [filteredValue, setFilteredValue] = useState(1);
     const [hoverValue, setHoverValue] = useState();
@@ -55,12 +72,21 @@ const Portfolio = () => {
     return(
         <section id="portfolio" className="portfolio">
             <PageHeaderContent
-                headerText="projects"
+                headerText={props.projectsContentProp[0].content}
                 icon={<BsBullseye size={30} />} />
             <div className="portfolio__content">
                 <ul className='portfolio__content__filter'>
 
                     {
+                        toggled ?
+                        filterDataPort.map(item => (
+                            <li className={item.filterId === filteredValue ? 'active' : ''} onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
+                                {
+                                    item.label
+                                }
+                            </li>
+                        ))
+                        :
                         filterData.map(item => (
                             <li className={item.filterId === filteredValue ? 'active' : ''} onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
                                 {
