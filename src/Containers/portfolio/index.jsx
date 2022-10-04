@@ -110,7 +110,7 @@ const Portfolio = (props) => {
                                         <img src={item.image}/>
                                     </a>
                                 </div>
-                                <div className='overlay'>
+                                {/* <div className='overlay'>
                                     {
                                         i === hoverValue && (
                                             <a href={item.link} target="_blank">
@@ -120,7 +120,7 @@ const Portfolio = (props) => {
                                             </a>
                                         )
                                     }
-                                </div>
+                                </div> */}
                             </div>
                         ))
                     }
