@@ -1,5 +1,6 @@
 import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
+import imageThree from '../../images/runner.png';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsBullseye } from 'react-icons/bs';
 import './styles.scss';
@@ -17,6 +18,12 @@ const portfolioData = [
         name: "Mockup",
         link: "https://pedro-lauro451.github.io/JSONPlaceholder-page/",
         image: imageTwo
+    },
+    {
+        id: 2,
+        name: "Pygame Runner",
+        link: "https://github.com/pedro-lauro451/pygame-runner",
+        image: imageThree
     }
 ];
 

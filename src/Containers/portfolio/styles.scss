@@ -94,6 +94,10 @@
                         }
                     }
                 }
+                &__img-wrapper:hover
+                {
+                    border: 1px dashed var(--green-theme-hover-color);
+                }
             }
         }
     }
