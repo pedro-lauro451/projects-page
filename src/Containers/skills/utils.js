@@ -4,6 +4,9 @@ export const skillsData = [
         data:
         [
             {
+                skillName: "React"
+            },
+            {
                 skillName: "HTML",
             },
             {
@@ -11,9 +14,6 @@ export const skillsData = [
             },
             {
                 skillName: "Javascript",
-            },
-            {
-                skillName: "React"
             }
         ],
     },
