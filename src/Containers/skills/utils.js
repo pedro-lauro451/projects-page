@@ -10,7 +10,7 @@ export const skillsData = [
                 skillName: "HTML",
             },
             {
-                skillName: "CSS",
+                skillName: "CSS3 & Sass",
             },
             {
                 skillName: "Javascript",
