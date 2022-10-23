@@ -1,3 +1,4 @@
+import imageZero from '../../images/planet_facts.png';
 import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
 import imageThree from '../../images/runner.png';
@@ -7,6 +8,12 @@ import './styles.scss';
 import { useState } from 'react';
 
 const portfolioData = [
+    {
+        id: 2,
+        name: "Planet Facts",
+        link: "https://pedro-lauro451.github.io/planet_facts/",
+        image: imageZero
+    },
     {
         id: 2,
         name: "Password Generator",
@@ -24,7 +31,7 @@ const portfolioData = [
         name: "Pygame Runner",
         link: "https://github.com/pedro-lauro451/pygame-runner",
         image: imageThree
-    }
+    },
 ];
 
 const Portfolio = (props) => {
