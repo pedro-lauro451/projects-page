@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/projects-page/static/css/main.82cdcd43.css",
-    "main.js": "/projects-page/static/js/main.ddd83b57.js",
+    "main.js": "/projects-page/static/js/main.1ef8e004.js",
     "static/media/planet_facts.png": "/projects-page/static/media/planet_facts.2790893dd01737e4ab20.png",
     "static/media/pwd-generator.jpg": "/projects-page/static/media/pwd-generator.f9fb3c31309775ff761e.jpg",
     "static/media/mockup.jpg": "/projects-page/static/media/mockup.f52cba2780faee15e5a8.jpg",
     "static/media/runner.png": "/projects-page/static/media/runner.fa02e66514c93666e55a.png",
     "index.html": "/projects-page/index.html",
     "main.82cdcd43.css.map": "/projects-page/static/css/main.82cdcd43.css.map",
-    "main.ddd83b57.js.map": "/projects-page/static/js/main.ddd83b57.js.map"
+    "main.1ef8e004.js.map": "/projects-page/static/js/main.1ef8e004.js.map"
   },
   "entrypoints": [
     "static/css/main.82cdcd43.css",
-    "static/js/main.ddd83b57.js"
+    "static/js/main.1ef8e004.js"
   ]
 }
