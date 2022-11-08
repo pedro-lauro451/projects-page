@@ -26,12 +26,6 @@ const portfolioData = [
         link: "https://pedro-lauro451.github.io/JSONPlaceholder-page/",
         image: imageTwo
     },
-    {
-        id: 2,
-        name: "Pygame Runner",
-        link: "https://github.com/pedro-lauro451/pygame-runner",
-        image: imageThree
-    },
 ];
 
 const Portfolio = (props) => {
