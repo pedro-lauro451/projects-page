@@ -1,7 +1,6 @@
 import imageZero from '../../images/planet_facts.png';
 import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
-import imageThree from '../../images/runner.png';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsBullseye } from 'react-icons/bs';
 import './styles.scss';
@@ -113,26 +112,21 @@ const Portfolio = (props) => {
                             onMouseEnter={()=>handleHover(i)}
                             onMouseLeave={()=>handleHover(null)}>
 
+                                <div className="portfolio__content__cards__item__name">
+                                    {item.name}
+                                </div>
+
                                 <div className='portfolio__content__cards__item__img-wrapper'>
                                     <a href={item.link} target="_blank">
                                         <img src={item.image}/>
                                     </a>
                                 </div>
-                                {/* <div className='overlay'>
-                                    {
-                                        i === hoverValue && (
-                                            <a href={item.link} target="_blank">
-                                            <div>
-                                                <p>{item.name}</p>
-                                            </div>
-                                            </a>
-                                        )
-                                    }
-                                </div> */}
+                                
                             </div>
                         ))
                     }
                 </div>
+                
             </div>
         </section>
     )
