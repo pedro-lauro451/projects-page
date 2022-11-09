@@ -114,12 +114,36 @@ export const homeContentPort = [
     {
       id: "1",
       content: "Projects"
-    }
+    },
+    {
+      id: "2",
+      content: "Planet Facts"
+    },
+    {
+      id: "3",
+      content: "Password Generator"
+    },
+    {
+      id: "4",
+      content: "Mockup"
+    },
   ];
 
   export const projectsPort = [
     {
       id: "1",
       content: "Projetos"
-    }
+    },
+    {
+      id: "2",
+      content: "Fatos sobre os Planetas"
+    },
+    {
+      id: "3",
+      content: "Gerador de Senhas"
+    },
+    {
+      id: "4",
+      content: "Mockup"
+    },
   ];

@@ -6,28 +6,30 @@ import { BsBullseye } from 'react-icons/bs';
 import './styles.scss';
 import { useState } from 'react';
 
-const portfolioData = [
-    {
-        id: 2,
-        name: "Planet Facts",
-        link: "https://pedro-lauro451.github.io/planet_facts/",
-        image: imageZero
-    },
-    {
-        id: 2,
-        name: "Password Generator",
-        link: "https://pedro-lauro451.github.io/password-generator/",
-        image: imageOne
-    },
-    {
-        id: 3,
-        name: "Mockup",
-        link: "https://pedro-lauro451.github.io/JSONPlaceholder-page/",
-        image: imageTwo
-    },
-];
+
 
 const Portfolio = (props) => {
+
+    const portfolioData = [
+        {
+            id: 2,
+            name: props.projectsContentProp[1].content,
+            link: "https://pedro-lauro451.github.io/planet_facts/",
+            image: imageZero
+        },
+        {
+            id: 2,
+            name: props.projectsContentProp[2].content,
+            link: "https://pedro-lauro451.github.io/password-generator/",
+            image: imageOne
+        },
+        {
+            id: 3,
+            name: props.projectsContentProp[3].content,
+            link: "https://pedro-lauro451.github.io/JSONPlaceholder-page/",
+            image: imageTwo
+        },
+    ];
 
     const toggled = props.toggled;
 
