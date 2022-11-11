@@ -127,6 +127,18 @@ export const homeContentPort = [
       id: "4",
       content: "Mockup"
     },
+    {
+      id: "5",
+      content: "8-page site with info about the Solar System"
+    },
+    {
+      id: "6",
+      content: "Password generator with customizable length"
+    },
+    {
+      id: "7",
+      content: "Page that uses dummy API data from JSONPlaceholder"
+    },
   ];
 
   export const projectsPort = [
@@ -145,5 +157,17 @@ export const homeContentPort = [
     {
       id: "4",
       content: "Mockup"
+    },
+    {
+      id: "5",
+      content: "Site de 8-páginas com dados sobre o Sistema Solar"
+    },
+    {
+      id: "6",
+      content: "Gerador de senha com tamanho customizável"
+    },
+    {
+      id: "7",
+      content: "Página que usa dados fictícios do JSONPlaceholder"
     },
   ];
