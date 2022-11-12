@@ -145,9 +145,14 @@ const Portfolio = (props) => {
                                 </div>
 
                                 <div className="portfolio__content__cards__item__icon">
-                                    <HtmlIcon size={30}></HtmlIcon>
-                                    <CssIcon size={30}></CssIcon>
-                                    <JavascriptIcon size={30}></JavascriptIcon>
+                                {item.uses.map((icon, index) => 
+                                {
+                                    const IconTag = icon;
+                                    return(
+                                        <IconTag size={30}></IconTag>
+                                    );
+                                }
+                                )}
                                 </div>
                                 
                             </div>
