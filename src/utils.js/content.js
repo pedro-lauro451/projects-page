@@ -137,7 +137,7 @@ export const homeContentPort = [
     },
     {
       id: "7",
-      content: "Page that uses dummy API data from JSONPlaceholder"
+      content: "Page with dummy API data from JSONPlaceholder"
     },
   ];
 
@@ -168,6 +168,6 @@ export const homeContentPort = [
     },
     {
       id: "7",
-      content: "Página que usa dados fictícios do JSONPlaceholder"
+      content: "Página com dados fictícios do JSONPlaceholder"
     },
   ];

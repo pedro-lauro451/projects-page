@@ -80,16 +80,10 @@ const Portfolio = (props) => {
     ];
 
     const [filteredValue, setFilteredValue] = useState(1);
-    const [hoverValue, setHoverValue] = useState();
 
     function handleFilter(currentId)
     {
         setFilteredValue(currentId);
-    };
-
-    function handleHover(index)
-    {
-        setHoverValue(index);
     };
 
     const filteredItems = filteredValue === 1 ? portfolioData : portfolioData.filter(item => item.id === filteredValue);
@@ -126,12 +120,12 @@ const Portfolio = (props) => {
                     {
                         filteredItems.map((item,i)=>(
                             <div key={`cardItem${item.name.trim()}`} 
-                            className="portfolio__content__cards__item"
-                            onMouseEnter={()=>handleHover(i)}
-                            onMouseLeave={()=>handleHover(null)}>
+                            className="portfolio__content__cards__item">
 
                                 <div className="portfolio__content__cards__item__name">
-                                    {item.name}
+                                    <a href={item.link} target="_blank">
+                                        {item.name}
+                                    </a>
                                 </div>
 
                                 <div className='portfolio__content__cards__item__img-wrapper'>
@@ -141,18 +135,22 @@ const Portfolio = (props) => {
                                 </div>
 
                                 <div className="portfolio__content__cards__item__description">
-                                    {item.description}
+                                    <a href={item.link} target="_blank">
+                                        {item.description}
+                                    </a>
                                 </div>
 
                                 <div className="portfolio__content__cards__item__icon">
+                                <a href={item.link} target="_blank">
                                 {item.uses.map((icon, index) => 
                                 {
                                     const IconTag = icon;
                                     return(
-                                        <IconTag size={30}></IconTag>
+                                        <IconTag size={30} key={index}></IconTag>
                                     );
                                 }
                                 )}
+                                </a>
                                 </div>
                                 
                             </div>

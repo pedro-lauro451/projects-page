@@ -32,6 +32,9 @@ export const skillsData = [
         [
             {
                 skillName: 'SQL',
+            },
+            {
+                skillName: 'MongoDB'
             }
         ]
     }
