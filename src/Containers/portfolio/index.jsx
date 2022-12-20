@@ -1,6 +1,7 @@
 import imageZero from '../../images/planet_facts.png';
 import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
+import imageThree from '../../images/movie-database.png';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 
 import { BsBullseye } from 'react-icons/bs';
@@ -9,6 +10,7 @@ import { SiHtml5 } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
 import { SiJson } from 'react-icons/si';
+import { FaReact } from 'react-icons/fa';
 
 import './styles.scss';
 import { useState } from 'react';
@@ -19,6 +21,7 @@ const Portfolio = (props) => {
     const CssIcon = SiCss3;
     const JavascriptIcon = SiJavascript;
     const JSONIcon = SiJson;
+    const ReactIcon = FaReact;
 
     const portfolioData = [
         {
@@ -36,6 +39,14 @@ const Portfolio = (props) => {
             description: props.projectsContentProp[5].content,
             image: imageOne,
             uses: [HtmlIcon,CssIcon,JavascriptIcon]
+        },
+        {
+            id: 3,
+            name: props.projectsContentProp[7].content,
+            link: "https://pedro-lauro451.github.io/movie-database/",
+            description: props.projectsContentProp[8].content,
+            image: imageThree,
+            uses: [ReactIcon, CssIcon, JSONIcon]
         },
         {
             id: 3,

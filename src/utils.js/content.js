@@ -139,6 +139,14 @@ export const homeContentPort = [
       id: "7",
       content: "Page with dummy API data from JSONPlaceholder"
     },
+    {
+      id: "8",
+      content: "Movie Database"
+    },
+    {
+      id: "9",
+      content: "IMDb-like search page"
+    }
   ];
 
   export const projectsPort = [
@@ -170,4 +178,12 @@ export const homeContentPort = [
       id: "7",
       content: "Página com dados fictícios do JSONPlaceholder"
     },
+    {
+      id: "8",
+      content: "Base de Dados de filmes"
+    },
+    {
+      id: "9",
+      content: "Página de pesquisa similar ao IMDb"
+    }
   ];
