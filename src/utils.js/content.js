@@ -1,7 +1,7 @@
 export const homeContentEng = [
     {
       id: "1",
-      content: "plauro451 - projects page"
+      content: "pedro lauro - portfolio"
     },
     {
       id: "2",
@@ -16,7 +16,7 @@ export const homeContentEng = [
 export const homeContentPort = [
     {
       id: "1",
-      content: "plauro451 - página de projetos"
+      content: "pedro lauro - portfólio"
     },
     {
       id: "2",
@@ -35,11 +35,11 @@ export const homeContentPort = [
     },
     {
       id: "2",
-      content: "Student, developer"
+      content: "Hello!"
     },
     {
       id: "3",
-      content: "Hello, my name is Pedro and I am a programming student aiming to become a full stack developer."
+      content: "I am a programming student aiming to become a full stack developer. I'm focusing mainly on React and learning the MERN stack, but I also intend to learn other stacks along the way, as well as Java and C#."
     },
     {
       id: "4",
@@ -54,11 +54,11 @@ export const homeContentPort = [
     },
     {
       id: "2",
-      content: "Estudante, desenvolvedor"
+      content: "Olá!"
     },
     {
       id: "3",
-      content: "Olá, meu nome é Pedro e eu sou um estudante de programação com o objetivo de me tornar um desenvolvedor Full Stack."
+      content: "Sou um estudante de programação com o objetivo de me tornar um desenvolvedor full stack. Estou me concentrando principalmente em React e em aprender o stack MERN, mas também quero aprender outros stacks ao longo do caminho, além de Java e C#."
     },
     {
       id: "4",
@@ -146,6 +146,10 @@ export const homeContentPort = [
     {
       id: "9",
       content: "IMDb-like search page"
+    },
+    {
+      id: "10",
+      content: "MERN Sales Dashboard"
     }
   ];
 
@@ -185,5 +189,9 @@ export const homeContentPort = [
     {
       id: "9",
       content: "Página de pesquisa similar ao IMDb"
+    },
+    {
+      id: "10",
+      content: "Dashboard de Vendas MERN"
     }
   ];

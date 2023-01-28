@@ -2,6 +2,7 @@ import imageZero from '../../images/planet_facts.png';
 import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
 import imageThree from '../../images/movie-database.png';
+import imageFour from '../../images/sales-dashboard.jpg';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 
 import { BsBullseye } from 'react-icons/bs';
@@ -11,6 +12,7 @@ import { SiCss3 } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
 import { SiJson } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
+import { SiMongodb } from 'react-icons/si';
 
 import './styles.scss';
 import { useState } from 'react';
@@ -22,6 +24,7 @@ const Portfolio = (props) => {
     const JavascriptIcon = SiJavascript;
     const JSONIcon = SiJson;
     const ReactIcon = FaReact;
+    const MongoIcon = SiMongodb;
 
     const portfolioData = [
         {
@@ -31,6 +34,14 @@ const Portfolio = (props) => {
             description: props.projectsContentProp[4].content,
             image: imageZero,
             uses: [HtmlIcon,CssIcon,JavascriptIcon,JSONIcon]
+        },
+        {
+            id: 2,
+            name: "Dashboard",
+            link: "https://sales-dashboard.onrender.com",
+            description: props.projectsContentProp[9].content,
+            image: imageFour,
+            uses: [ReactIcon,CssIcon,MongoIcon]
         },
         {
             id: 2,
@@ -47,15 +58,7 @@ const Portfolio = (props) => {
             description: props.projectsContentProp[8].content,
             image: imageThree,
             uses: [ReactIcon, CssIcon, JSONIcon]
-        },
-        {
-            id: 3,
-            name: props.projectsContentProp[3].content,
-            link: "https://pedro-lauro451.github.io/JSONPlaceholder-page/",
-            description: props.projectsContentProp[6].content,
-            image: imageTwo,
-            uses: [HtmlIcon,CssIcon,JavascriptIcon,JSONIcon]
-        },
+        }
     ];
 
     const toggled = props.toggled;

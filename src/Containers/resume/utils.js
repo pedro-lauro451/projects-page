@@ -3,12 +3,12 @@ export const resumeData = {
         {
             title: "CRM Analyst",
             subTitle: "ADIN Comercial",
-            description: "Email creation and campaign segmentation using Oracle Responsys and SQL queries. Process documentation and HTML quality assurance."
+            description: "Development of a web page to help with the creation of contact filters in Oracle Responsys; campaign orchestration using the Responsys Programming Language; contact list segmentation using SQL queries; e-mail marketing journey orchestration."
         },
         {
             title: "Teaching Assistant",
             subTitle: "IFSP",
-            description: "Assisting students with programming questions and exercises. Computer lab inspection. Translation of classroom monitoring software from Portuguese to English."
+            description: "Peer tutoring on Java and OOP basics; computer lab maintenance; translation of open source computer-monitoring software from English to Portuguese."
         }
     ], 
 };
@@ -28,12 +28,12 @@ export const resumeDataPort = {
         {
             title: "Analista de CRM",
             subTitle: "ADIN Comercial",
-            description: "Criação de emails e segmentação de campanhas usando Oracle Responsys e pesquisas de SQL. Documentação de processos e QA do HTML."
+            description: "Desenvolvimento de uma página para auxiliar na criação de filtros de contato no Oracle Responsys; orquestração de campanhas com conteúdo dinâmico utilizando a Responsys Programming Language; segmentações de listas de contatos com SQL; orquestração de jornadas de e-mail marketing."
         },
         {
             title: "Monitoria",
             subTitle: "IFSP",
-            description: "Auxiliar estudantes com exercícios e perguntas sobre programação. Inspeção do laboratório. Tradução do software de monitoramento da sala do Inglês para o Português."
+            description: "Tirar dúvidas dos alunos sobre Java e OOP; manutenção do laboratório; tradução de software open source de monitoramento de computadores do Inglês para o Português."
         }
     ], 
 };
