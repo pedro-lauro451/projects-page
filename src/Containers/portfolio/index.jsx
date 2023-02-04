@@ -3,6 +3,7 @@ import imageOne from '../../images/pwd-generator.jpg';
 import imageTwo from '../../images/mockup.jpg';
 import imageThree from '../../images/movie-database.png';
 import imageFour from '../../images/sales-dashboard.jpg';
+import imageFive from '../../images/url-shortener.png';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 
 import { BsBullseye } from 'react-icons/bs';
@@ -58,6 +59,14 @@ const Portfolio = (props) => {
             description: props.projectsContentProp[8].content,
             image: imageThree,
             uses: [ReactIcon, CssIcon, JSONIcon]
+        },
+        {
+            id: 3,
+            name: props.projectsContentProp[10].content,
+            link: "https://pedro-lauro451.github.io/url-shortener/",
+            description: props.projectsContentProp[11].content,
+            image: imageFive,
+            uses: [HtmlIcon,CssIcon,JavascriptIcon]
         }
     ];
 

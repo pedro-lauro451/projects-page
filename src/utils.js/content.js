@@ -150,6 +150,14 @@ export const homeContentPort = [
     {
       id: "10",
       content: "MERN Sales Dashboard"
+    },
+    {
+      id: "11",
+      content: "URL Shortener"
+    },
+    {
+      id: "12",
+      content: "URL shortener page"
     }
   ];
 
@@ -193,5 +201,13 @@ export const homeContentPort = [
     {
       id: "10",
       content: "Dashboard de Vendas MERN"
+    },
+    {
+      id: "11",
+      content: "Encurtador de URLs"
+    },
+    {
+      id: "12",
+      content: "Página para encurtar URLs"
     }
   ];
