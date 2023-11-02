@@ -39,7 +39,7 @@ export const homeContentPort = [
     },
     {
       id: "3",
-      content: "I am a programming student aiming to become a full stack developer. I'm focusing mainly on React and learning the MERN stack, but I also intend to learn other stacks along the way, as well as Java and C#."
+      content: "My name is Pedro. I am a front-end developer based in São Paulo, Brazil. Highly dedicated, with a keen eye for detail and how to provide the best user experience. I am also growing my array of knowledge by learning back-end skills that are not only useful for a front-end developer, but will also allow me to branch out into back-end and even full-stack work in the near future."
     },
     {
       id: "4",
@@ -58,7 +58,7 @@ export const homeContentPort = [
     },
     {
       id: "3",
-      content: "Sou um estudante de programação com o objetivo de me tornar um desenvolvedor full stack. Estou me concentrando principalmente em React e em aprender o stack MERN, mas também quero aprender outros stacks ao longo do caminho, além de Java e C#."
+      content: "Meu nome é Pedro. Sou um desenvolvedor front-end em São Paulo, Brasil. Altamente dedicado, com um olhar aguçado para detalhes e em como proporcionar a melhor experiência do usuário. Também estou ampliando meu leque de conhecimentos, aprendendo habilidades de back-end que não são apenas úteis para um desenvolvedor front-end, mas que também me permitirão expandir meu trabalho para o back-end e até mesmo para o desenvolvimento full-stack em um futuro próximo."
     },
     {
       id: "4",
@@ -158,6 +158,14 @@ export const homeContentPort = [
     {
       id: "12",
       content: "URL shortener page"
+    },
+    {
+      id: "13",
+      content: "Countries List"
+    },
+    {
+      id: "14",
+      content: "Page with info on countries + multiple filter options"
     }
   ];
 
@@ -209,5 +217,13 @@ export const homeContentPort = [
     {
       id: "12",
       content: "Página para encurtar URLs"
+    },
+    {
+      id: "13",
+      content: "Lista de Países"
+    },
+    {
+      id: "14",
+      content: "Página com informações sobre países + múltiplas opções de filtro"
     }
   ];

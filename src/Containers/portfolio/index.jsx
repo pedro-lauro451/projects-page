@@ -1,9 +1,7 @@
 import imageZero from '../../images/planet_facts.png';
 import imageOne from '../../images/pwd-generator.jpg';
-import imageTwo from '../../images/mockup.jpg';
-import imageThree from '../../images/movie-database.png';
 import imageFour from '../../images/sales-dashboard.jpg';
-import imageFive from '../../images/url-shortener.png';
+import imageFive from '../../images/countries-list.jpg';
 import PageHeaderContent from "../../Components/pageHeaderContent";
 
 import { BsBullseye } from 'react-icons/bs';
@@ -53,20 +51,12 @@ const Portfolio = (props) => {
             uses: [HtmlIcon,CssIcon,JavascriptIcon]
         },
         {
-            id: 3,
-            name: props.projectsContentProp[7].content,
-            link: "https://pedro-lauro451.github.io/movie-database/",
-            description: props.projectsContentProp[8].content,
-            image: imageThree,
-            uses: [ReactIcon, CssIcon, JSONIcon]
-        },
-        {
-            id: 3,
-            name: props.projectsContentProp[10].content,
-            link: "https://pedro-lauro451.github.io/url-shortener/",
-            description: props.projectsContentProp[11].content,
+            id: 2,
+            name: props.projectsContentProp[12].content,
+            link: "https://whereintheworld-alhx.onrender.com/",
+            description: props.projectsContentProp[13].content,
             image: imageFive,
-            uses: [HtmlIcon,CssIcon,JavascriptIcon]
+            uses: [ReactIcon, CssIcon, JSONIcon]
         }
     ];
 

@@ -1,6 +1,11 @@
 export const resumeData = {
     experience: [
         {
+            title: 'Front-end Developer',
+            subtitle: 'Adin Comercial',
+            description: 'Creation of marketplace webpages and landing pages; layout adjustments; minor bug fixes; CLS reduction and improvement of DOM change handling.'
+        },
+        {
             title: "CRM Analyst",
             subTitle: "ADIN Comercial",
             description: "Development of a web page to help with the creation of contact filters in Oracle Responsys; campaign orchestration using the Responsys Programming Language; contact list segmentation using SQL queries; e-mail marketing journey orchestration."
@@ -25,6 +30,11 @@ export const experienceData = {
 
 export const resumeDataPort = {
     experience: [
+        {
+            title: 'Desenvolvedor front-end',
+            subtitle: 'Adin Comercial',
+            description: 'Criação de landing pages e webpages de marketplace; ajustes de layout; correções de bugs pequenos; redução de CLS do tratamento de mudanças no DOM.'
+        },
         {
             title: "Analista de CRM",
             subTitle: "ADIN Comercial",
