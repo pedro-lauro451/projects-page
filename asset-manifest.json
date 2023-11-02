@@ -1,19 +1,17 @@
 {
   "files": {
     "main.css": "/projects-page/static/css/main.cad8c91c.css",
-    "main.js": "/projects-page/static/js/main.caf0c292.js",
-    "static/media/movie-database.png": "/projects-page/static/media/movie-database.eb31a61cbe01bb0ff1fa.png",
+    "main.js": "/projects-page/static/js/main.3c94ca1b.js",
+    "static/media/countries-list.jpg": "/projects-page/static/media/countries-list.d8cc482aff28636f7074.jpg",
     "static/media/sales-dashboard.jpg": "/projects-page/static/media/sales-dashboard.1a0620e0c83cbf730dbb.jpg",
     "static/media/planet_facts.png": "/projects-page/static/media/planet_facts.2790893dd01737e4ab20.png",
     "static/media/pwd-generator.jpg": "/projects-page/static/media/pwd-generator.f9fb3c31309775ff761e.jpg",
-    "static/media/mockup.jpg": "/projects-page/static/media/mockup.f52cba2780faee15e5a8.jpg",
-    "static/media/url-shortener.png": "/projects-page/static/media/url-shortener.5d63225b8364afdc54c1.png",
     "index.html": "/projects-page/index.html",
     "main.cad8c91c.css.map": "/projects-page/static/css/main.cad8c91c.css.map",
-    "main.caf0c292.js.map": "/projects-page/static/js/main.caf0c292.js.map"
+    "main.3c94ca1b.js.map": "/projects-page/static/js/main.3c94ca1b.js.map"
   },
   "entrypoints": [
     "static/css/main.cad8c91c.css",
-    "static/js/main.caf0c292.js"
+    "static/js/main.3c94ca1b.js"
   ]
 }
